@@ -1,4 +1,8 @@
 import { createApp } from './base.js'
 
 createApp(window.hydration)
-  .mount('main')
+  .then(({ instance, router }) => {
+    router.isReady().then(() => {
+      instance.mount('main')
+    })
+  })
