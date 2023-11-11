@@ -13,6 +13,7 @@ function startAnimation() {
 
   let a = document.getElementById("charging");
 
+
   const intervalId = setInterval(function () {
     if (starCount < maxStars) {
       a.innerHTML +=
@@ -26,6 +27,7 @@ function startAnimation() {
 
   isAnimationRunning = true;
 }
+
 </script>
 
 <template>
