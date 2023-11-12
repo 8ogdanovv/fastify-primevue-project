@@ -6,7 +6,6 @@ html {
 
 body {
   min-height: 100vh;
-  max-width: 100vw;
   color: #fff;
   background: radial-gradient(
       135.35% 140.89% at 107.72% -60.35%,
@@ -29,8 +28,9 @@ body {
 }
 
 .main-wrapper {
+  width: 100%;
   background-image: url("background.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: 125% 125%;
 }

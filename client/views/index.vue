@@ -1,4 +1,5 @@
 <template>
+    <p>This is index</p>
   <!-- <ul>
     <li
       v-for="(listItem, i) in state.todoList"
@@ -13,12 +14,6 @@
     </button>
   </div>
   <p> -->
-    <router-link to="/prime">
-      Go to PrimeVue page
-    </router-link>
-    <router-link to="/stats">
-      Go to Stats page
-    </router-link>
   <!-- </p> -->
 </template>
 
