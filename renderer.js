@@ -5,6 +5,8 @@ import { renderToString } from '@vue/server-renderer'
 // <script> tags, preventing a few types of attack
 import { uneval } from 'devalue'
 
+import { fetchFeedbacks } from './firebase/index.js'
+
 // The @fastify/vite renderer overrides
 export default { createRenderFunction }
 
@@ -12,12 +14,11 @@ function createRenderFunction ({ createApp }) {
   return async function (server, req, reply) {
     // Server data that we want to be used for SSR
     // and made available on the client for hydration
+    // eslint-disable-next-line no-var
+    var feedbacks = await fetchFeedbacks()
+    // eslint-disable-next-line no-var
     const data = {
-      todoList: [
-        'Do laundry',
-        'Respond to emails',
-        'Write report'
-      ]
+      feedbacks
     }
     // Creates Vue application instance with all the SSR context it needs
     const app = await createApp({ data, server, req, reply }, req.raw.url)

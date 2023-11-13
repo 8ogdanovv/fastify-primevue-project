@@ -3,7 +3,7 @@
     <nav>
       <menu>
         <li>
-          <router-link to="/">
+          <router-link to="/form">
             <img src="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Forms-icon.png" alt="form">
             /form
           </router-link>
@@ -44,8 +44,11 @@
             /vercel
           </router-link>
         </li>
+
       </menu>
     </nav>
+
+    <!-- <theme-switcher /> -->
 
     <router-view v-slot="{ Component }">
       <Suspense>
@@ -57,6 +60,10 @@
     </router-view>
   </div>
 </template>
+
+<script setup>
+// import ThemeSwitcher from './views/components/ThemeSwitcher.vue';
+</script>
 
 <style>
 
@@ -87,9 +94,13 @@ menu {
   align-items: center;
   justify-content: center;
   margin: 0;
-  gap: 1rem;
   height: 7vmax;
   padding: 4rem 0;
+}
+
+li a {
+  width: 7vmax;
+  margin: 0;
 }
 
 li img {
@@ -101,7 +112,7 @@ li a {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   border: 2px solid transparent;
   transition: all 0.2s;
 
@@ -123,6 +134,14 @@ a {
       rgba(5, 4, 31, 0) 100%
     ),
     #121116;
+}
+
+nav > menu > li > a:not(.router-link-exact-active) {
+  color: #bcbcbc;
+  text-shadow: 0 0 1px #000;
+  filter: blur(1px);
+  transform: scale(0.8);
+  transition: all 0.5s;
 }
 
 iframe {

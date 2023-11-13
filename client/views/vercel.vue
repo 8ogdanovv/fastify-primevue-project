@@ -1,5 +1,5 @@
 <template>
   <div>
-    <iframe src="https://vercel.com/" title="Vercel" frameborder="0"></iframe>
+    <iframe src="https://vite-vue-template.vercel.app/" title="Vercel" frameborder="0"></iframe>
   </div>
 </template>

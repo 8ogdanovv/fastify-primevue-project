@@ -4,6 +4,10 @@ export default [
     component: () => import('./views/index.vue')
   },
   {
+    path: '/form',
+    component: () => import('./views/form.vue')
+  },
+  {
     path: '/stats',
     component: () => import('./views/stats.vue')
   },
@@ -26,5 +30,9 @@ export default [
   {
     path: '/vercel',
     component: () => import('./views/vercel.vue')
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: () => import('./views/404.vue')
   }
 ]

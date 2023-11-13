@@ -1,33 +1,8 @@
 <template>
-    <p>This is index</p>
-  <!-- <ul>
-    <li
-      v-for="(listItem, i) in state.todoList"
-      :key="`item-${i}`">
-      {{ listItem }}
-    </li>
-  </ul>
-  <div>
-    <input v-model="item">
-    <button @click="addItem">
-      Add
-    </button>
+  <div style="display: flex; align-items: center; justify-content: center; height: calc(100dvh - 7vmax - 5px); position: relative;">
+    <iframe style="width: 68vw; height: 38.25vw; position: relative; bottom: 2dvh" src="https://www.youtube.com/embed/UHIsnDh6L74"></iframe>
   </div>
-  <p> -->
-  <!-- </p> -->
 </template>
 
-<script>
-// export default {
-//   inject: ['state'],
-//   data: () => ({
-//     item: ''
-//   }),
-//   methods: {
-//     async addItem () {
-//       this.state.todoList.push(this.item)
-//       this.item = ''
-//     }
-//   }
-// }
+<script setup>
 </script>

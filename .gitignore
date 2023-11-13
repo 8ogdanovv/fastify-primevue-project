@@ -1,20 +1,4 @@
-# Node.js
-node_modules/
+node_modules
+/firebase/firebaseConfig.js
+.env
 package-lock.json
-
-# Build artifacts
-dist/
-
-# IDE/Editor specific
-.vscode/
-.idea/
-
-# Temporary files
-.DS_Store
-*.log
-
-# Test files
-server.test.js
-
-# Vite test configuration
-vitest.config.js
