@@ -1,4 +1,4 @@
 node_modules
-/firebase/firebaseConfig.js
+# /firebase/firebaseConfig.js
 .env
 package-lock.json
