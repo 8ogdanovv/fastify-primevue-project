@@ -28,8 +28,8 @@ export default [
     component: () => import('./views/fastify.vue')
   },
   {
-    path: '/vercel',
-    component: () => import('./views/vercel.vue')
+    path: '/cyclic',
+    component: () => import('./views/cyclic.vue')
   },
   {
     path: '/:catchAll(.*)',

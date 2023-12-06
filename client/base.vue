@@ -39,9 +39,9 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/vercel">
-            <img src="https://www.svgrepo.com/show/327408/logo-vercel.svg" alt="vercel logo">
-            /vercel
+          <router-link to="/cyclic">
+            <img src="./assets/cyclic.png" alt="cyclic logo">
+            /cyclic
           </router-link>
         </li>
 

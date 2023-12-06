@@ -10,7 +10,7 @@
 
 <script setup>
 import { reactive, inject } from 'vue'
-import { addFeedback } from '../../firebase/index.js'
+// import { addFeedback } from '../../firebase/index.js'
 
 import { useField, useForm } from 'vee-validate'
 
